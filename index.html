@@ -1,352 +1,525 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRUK PRO — Glazurnik i Wykończenia Wnętrz</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Profesjonalne układanie płytek i kompleksowe wykończenia łazienek. Premium studio glazury i metamorfoz łazienek."
+    />
+    <title>GLAZURA STUDIO | Łazienki premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a href="#top" class="brand" aria-label="Strona główna">
+            <span class="brand-mark">G</span>
+            <span class="brand-text">
+              <strong>GLAZURA</strong>
+              <small>STUDIO</small>
+            </span>
+          </a>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <div class="nav-left">
-            <div class="nav-logo">BRUK PRO</div>
-            <div class="nav-descriptor">GLAZURNIK / WYKOŃCZENIA</div>
-        </div>
-        <div class="nav-center">
-            <a href="#uslugi">USŁUGI</a>
-            <a href="#realizacje">REALIZACJE</a>
-            <a href="#proces">PROCES</a>
-            <a href="#omnie">O MNIE</a>
-            <a href="#kontakt">KONTAKT</a>
-        </div>
-        <button class="nav-cta" onclick="scrollToElement('kontakt')">ZAMÓW WYCENĘ</button>
-        <div class="hamburger" onclick="toggleMobileMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+          <nav class="main-nav" aria-label="Główna nawigacja">
+            <a href="#about">O mnie</a>
+            <a href="#services">Usługi</a>
+            <a href="#portfolio">Realizacje</a>
+            <a href="#transformations">Metamorfozy</a>
+            <a href="#process">Jak pracuję</a>
+            <a href="#reviews">Opinie</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Kontakt</a>
+          </nav>
 
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu">
-        <a href="#uslugi" onclick="toggleMobileMenu()">USŁUGI</a>
-        <a href="#realizacje" onclick="toggleMobileMenu()">REALIZACJE</a>
-        <a href="#proces" onclick="toggleMobileMenu()">PROCES</a>
-        <a href="#omnie" onclick="toggleMobileMenu()">O MNIE</a>
-        <a href="#kontakt" onclick="toggleMobileMenu()">KONTAKT</a>
-        <a href="#kontakt" onclick="toggleMobileMenu()" style="background: var(--accent); color: var(--black); font-weight: 900;">ZAMÓW WYCENĘ</a>
+          <div class="header-actions">
+            <a class="phone-link" href="tel:+48555123456">+48 555 123 456</a>
+            <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero-bg"></div>
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <span class="eyebrow">Architektoniczna robota wykończeniowa</span>
+              <h1>GLAZURA. DETAL. PERFEKCJA.</h1>
+              <p>
+                Profesjonalne układanie płytek i kompleksowe wykończenia łazienek.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#portfolio">ZOBACZ REALIZACJE</a>
+                <a class="btn btn-secondary" href="#contact">WYCENA</a>
+              </div>
+              <ul class="hero-meta" aria-label="Statystyki firmy">
+                <li>
+                  <strong>14+</strong>
+                  <span>lat doświadczenia</span>
+                </li>
+                <li>
+                  <strong>260+</strong>
+                  <span>zrealizowanych łazienek</span>
+                </li>
+                <li>
+                  <strong>4.9/5</strong>
+                  <span>średnia ocena klienta</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hero-visual reveal">
+              <div class="hero-card hero-card-main">
+                <img
+                  src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=900&q=80"
+                  alt="Nowoczesna łazienka z jasną glazurą"
+                />
+              </div>
+              <div class="hero-card hero-card-small">
+                <img
+                  src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=700&q=80"
+                  alt="Detale wykończenia łazienki"
+                />
+              </div>
+              <div class="floating-badge">
+                <span>DEMO</span>
+                <strong>Renowacja premium</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-bar reveal">
+          <div class="container trust-inner">
+            <span>Projektowanie wnętrz</span>
+            <span>Układanie płytek</span>
+            <span>Wykończenia wykończenia</span>
+            <span>Renowacja łazienek</span>
+          </div>
+        </section>
+
+        <section id="about" class="section about">
+          <div class="container about-grid">
+            <div class="about-media reveal">
+              <div class="media-frame media-frame-large">
+                <img
+                  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
+                  alt="Mężczyzna układający płytki w łazience"
+                />
+              </div>
+              <div class="media-caption">
+                <span class="caption-tag">DEMO</span>
+                <p>Dokładność, porządek i estetyka w każdym detalu.</p>
+              </div>
+            </div>
+
+            <div class="about-copy reveal">
+              <span class="section-label">O MNIE</span>
+              <h2>Nowoczesne łazienki, zrobione z myślą o codziennym komfortcie.</h2>
+              <p>
+                Tworzę eleganckie i funkcjonalne wnętrza łazienkowe z naciskiem na geometrię,
+                jakość wykonania i spójność detalu. Każde zlecenie traktuję jak projekt
+                architektoniczny — od dokładnej analizy, przez dobór materiałów, aż po finalne
+                wykończenie.
+              </p>
+              <p>
+                Moja praca łączy klasyczne podejście do konstrukcji z nowoczesnym stylem,
+                dzięki czemu efekty nie tylko wyglądają świetnie, ale służą przez lata.
+              </p>
+
+              <div class="about-stats">
+                <div>
+                  <strong>260+</strong>
+                  <span>realizacji</span>
+                </div>
+                <div>
+                  <strong>96%</strong>
+                  <span>powracających klientów</span>
+                </div>
+                <div>
+                  <strong>7 dni</strong>
+                  <span>średni termin realizacji</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="section services">
+          <div class="container">
+            <div class="section-heading reveal">
+              <span class="section-label">USŁUGI</span>
+              <h2>Kompleksowe usługi dla łazienek i wnętrz.</h2>
+            </div>
+
+            <div class="services-grid">
+              <article class="service-card reveal">
+                <div class="icon-wrap">01</div>
+                <h3>Układanie płytek</h3>
+                <p>Ściany, podłogi, wnęki, nisze, mozaiki i eleganckie detale w nowoczesnym wykonaniu.</p>
+              </article>
+
+              <article class="service-card reveal">
+                <div class="icon-wrap">02</div>
+                <h3>Renowacja łazienek</h3>
+                <p>Pełna przebudowa, wymiana instalacji, wykończenie i dopracowanie każdego detalu.</p>
+              </article>
+
+              <article class="service-card reveal">
+                <div class="icon-wrap">03</div>
+                <h3>Wykładziny i podłogi</h3>
+                <p>Wykończenie powierzchni z wykorzystaniem materiałów premium i trwałych rozwiązań.</p>
+              </article>
+
+              <article class="service-card reveal">
+                <div class="icon-wrap">04</div>
+                <h3>Prace wykończeniowe</h3>
+                <p>Listwy, fugowanie, szpachlowanie, impregnacja i finalne dopieszczanie estetyki.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolio" class="section portfolio">
+          <div class="container">
+            <div class="section-heading reveal">
+              <span class="section-label">REALIZACJE</span>
+              <h2>Wybrane projekty, które pokazują poziom wykonania.</h2>
+            </div>
+
+            <div class="portfolio-toolbar reveal">
+              <div class="filter-group" aria-label="Filtry realizacji">
+                <button class="filter-btn active" data-filter="all">Wszystkie</button>
+                <button class="filter-btn" data-filter="lazienka">Łazienka</button>
+                <button class="filter-btn" data-filter="prysznic">Prysznic</button>
+                <button class="filter-btn" data-filter="podlogi">Podłogi</button>
+                <button class="filter-btn" data-filter="sciany">Ściany</button>
+              </div>
+            </div>
+
+            <div class="portfolio-grid">
+              <article class="portfolio-item reveal" data-category="lazienka">
+                <img
+                  src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=900&q=80"
+                  alt="Nowoczesna łazienka z dużą wanną"
+                />
+                <div class="item-overlay">
+                  <span>Łazienka premium</span>
+                  <strong>Willa Horizon</strong>
+                </div>
+              </article>
+
+              <article class="portfolio-item reveal" data-category="prysznic">
+                <img
+                  src="https://images.unsplash.com/photo-1628600413246-4a8d0dce6d9a?auto=format&fit=crop&w=900&q=80"
+                  alt="Prysznic z dużą przeszkleną kabiną"
+                />
+                <div class="item-overlay">
+                  <span>Prysznic</span>
+                  <strong>Minimalistyczna strefa</strong>
+                </div>
+              </article>
+
+              <article class="portfolio-item reveal" data-category="podlogi">
+                <img
+                  src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80"
+                  alt="Podłoga z dużych płytek ceramicznych"
+                />
+                <div class="item-overlay">
+                  <span>Podłogi</span>
+                  <strong>Piaskowy beton</strong>
+                </div>
+              </article>
+
+              <article class="portfolio-item reveal" data-category="sciany">
+                <img
+                  src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"
+                  alt="Ściany wykończone płytkami w eleganckiej łazience"
+                />
+                <div class="item-overlay">
+                  <span>Ściany</span>
+                  <strong>Glazura architektoniczna</strong>
+                </div>
+              </article>
+
+              <article class="portfolio-item reveal" data-category="lazienka">
+                <img
+                  src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80"
+                  alt="Biała łazienka z dużym lustrem i minimalistycznymi detalami"
+                />
+                <div class="item-overlay">
+                  <span>Łazienka</span>
+                  <strong>Jasna elegancja</strong>
+                </div>
+              </article>
+
+              <article class="portfolio-item reveal" data-category="prysznic">
+                <img
+                  src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=900&q=80"
+                  alt="Elegancki prysznic z ceglaną mozaiką"
+                />
+                <div class="item-overlay">
+                  <span>Prysznic</span>
+                  <strong>Akcent terracotta</strong>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="transformations" class="section transformations">
+          <div class="container transformations-inner">
+            <div class="section-heading reveal left-aligned">
+              <span class="section-label">METAMORFOZY ŁAZIENEK</span>
+              <h2>Przed i po — zmysłowe zmiany, które robią różnicę.</h2>
+            </div>
+
+            <div class="before-after reveal">
+              <div class="before-after-slider" aria-label="Przed i po metamorfozie łazienki">
+                <div class="slider-image before-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=80"
+                    alt="Łazienka przed metamorfozą"
+                  />
+                  <span class="slider-label before">PRZED</span>
+                </div>
+
+                <div class="slider-image after-image" style="width: 50%;">
+                  <img
+                    src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1000&q=80"
+                    alt="Łazienka po metamorfozie"
+                  />
+                  <span class="slider-label after">PO</span>
+                </div>
+
+                <div class="slider-handle" aria-hidden="true">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="process" class="section process">
+          <div class="container">
+            <div class="section-heading reveal">
+              <span class="section-label">JAK PRACUJĘ</span>
+              <h2>Transparentny proces od pomysłu do gotowego projektu.</h2>
+            </div>
+
+            <div class="process-grid">
+              <div class="process-step reveal">
+                <span>01</span>
+                <h3>Pomiar i konsultacja</h3>
+                <p>Rozmawiamy o potrzebach, stylu i zakresie prac, a następnie sprawdzam realne wymiary.</p>
+              </div>
+              <div class="process-step reveal">
+                <span>02</span>
+                <h3>Projekt i dobór materiałów</h3>
+                <p>Dobieram rozwiązania dopasowane do światła, funkcji, budżetu i estetyki wnętrza.</p>
+              </div>
+              <div class="process-step reveal">
+                <span>03</span>
+                <h3>Realizacja</h3>
+                <p>Wykonuję prace z rygorem wykonania, czystością i dokładnością na każdym etapie.</p>
+              </div>
+              <div class="process-step reveal">
+                <span>04</span>
+                <h3>Finalne wykończenie</h3>
+                <p>Sprawdzam detale, finalizuję wykończenie i przekazuję gotową do użytkowania łazienkę.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews" class="section reviews">
+          <div class="container">
+            <div class="section-heading reveal">
+              <span class="section-label">OPINIE</span>
+              <h2>Klienci polecają mnie za precyzję i klimat wnętrza.</h2>
+            </div>
+
+            <div class="reviews-grid">
+              <article class="review-card reveal">
+                <div class="rating" aria-label="Ocena 5 gwiazdek">★★★★★</div>
+                <p>
+                  „Dzięki pracy pana Marka nasza łazienka stała się prawdziwym azylem. Wszystko
+                  zostało wykonane dokładnie, a detale są dopracowane perfekcyjnie.”
+                </p>
+                <div class="review-author">
+                  <strong>Anna & Paweł</strong>
+                  <span>DEMO — Warszawa</span>
+                </div>
+              </article>
+
+              <article class="review-card reveal">
+                <div class="rating" aria-label="Ocena 5 gwiazdek">★★★★★</div>
+                <p>
+                  „Bardzo dobra komunikacja, terminowość i bardzo estetyczne wykończenie. Zawsze
+                  wiedzieliśmy, czego się spodziewać na każdym etapie prac.”
+                </p>
+                <div class="review-author">
+                  <strong>Katarzyna M.</strong>
+                  <span>DEMO — Kraków</span>
+                </div>
+              </article>
+
+              <article class="review-card reveal">
+                <div class="rating" aria-label="Ocena 5 gwiazdek">★★★★★</div>
+                <p>
+                  „Metamorfoza łazienki była ogromnym przeżyciem — od starej, ciemnej przestrzeni do
+                  jasnej, minimalistycznej oazy. Efekt bardzo elegancki i nowoczesny.”
+                </p>
+                <div class="review-author">
+                  <strong>Robert S.</strong>
+                  <span>DEMO — Gdańsk</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="section faq">
+          <div class="container faq-inner">
+            <div class="section-heading reveal left-aligned">
+              <span class="section-label">FAQ</span>
+              <h2>Najczęstsze pytania o współpracę i realizacje.</h2>
+            </div>
+
+            <div class="faq-list reveal">
+              <div class="faq-item active">
+                <button class="faq-question" type="button" aria-expanded="true">
+                  Jak wygląda wycena prac?
+                </button>
+                <div class="faq-answer">
+                  <p>Wycena jest ustalana po wstępnej konsultacji, pomiarach oraz analizie zakresu prac. Wartość zależy od powierzchni, materiałów i stopnia przebudowy.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  Czy wykonujecie także pełne metamorfozy łazienek?
+                </button>
+                <div class="faq-answer">
+                  <p>Tak. Realizuję również kompleksowe renowacje łazienek — od rozbiórki i instalacji po wykończenie oraz dobór dodatków.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  Czy mogę wybrać własne płytki i materiały?
+                </button>
+                <div class="faq-answer">
+                  <p>Tak, wspólnie dobieramy materiały, które najlepiej pasują do stylu i funkcji wnętrza, a także doradzam przy wyborze praktycznych rozwiązań.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  Jak wygląda termin realizacji?
+                </button>
+                <div class="faq-answer">
+                  <p>W większości projektów termin realizacji wynosi od 7 do 21 dni, w zależności od zakresu prac, dostępności materiałów i stopnia złożoności projektu.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact">
+          <div class="container contact-grid">
+            <div class="contact-copy reveal">
+              <span class="section-label">KONTAKT</span>
+              <h2>Zapraszamy do rozmowy o Twojej łazience.</h2>
+              <p>
+                Jeśli marzysz o nowoczesnej, funkcjonalnej i eleganckiej łazience, napisz lub zadzwoń.
+                Przedstawimy Ci rozwiązania dopasowane do Twoich potrzeb.
+              </p>
+
+              <div class="contact-details">
+                <div>
+                  <span>Telefon</span>
+                  <a href="tel:+48555123456">+48 555 123 456</a>
+                </div>
+                <div>
+                  <span>Email</span>
+                  <a href="mailto:kontakt@glazurastudio-demo.pl">kontakt@glazurastudio-demo.pl</a>
+                </div>
+                <div>
+                  <span>Adres</span>
+                  <p>ul. Jasna 18, 00-001 Warszawa</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card reveal">
+              <form class="contact-form">
+                <div class="field-row">
+                  <label>
+                    <span>Imię</span>
+                    <input type="text" name="name" placeholder="Twoje imię" />
+                  </label>
+                </div>
+                <div class="field-row">
+                  <label>
+                    <span>Email</span>
+                    <input type="email" name="email" placeholder="twój@email.pl" />
+                  </label>
+                </div>
+                <div class="field-row">
+                  <label>
+                    <span>Wiadomość</span>
+                    <textarea name="message" rows="5" placeholder="Opisz swoje potrzeby"></textarea>
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary full-width">WYŚLIJ ZAPYTANIE</button>
+                <p class="demo-note">DEMO — formularz demonstracyjny</p>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div>
+            <a href="#top" class="brand footer-brand" aria-label="Strona główna">
+              <span class="brand-mark">G</span>
+              <span class="brand-text">
+                <strong>GLAZURA</strong>
+                <small>STUDIO</small>
+              </span>
+            </a>
+          </div>
+          <p>© 2026 GLAZURA STUDIO — DEMO</p>
+          <a href="#contact">Umów konsultację</a>
+        </div>
+      </footer>
     </div>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-image"></div>
-        <div class="hero-number">01</div>
-        <div class="hero-content">
-            <h1>ROBOTA,<br>KTÓRĄ<br>WIDAĆ.</h1>
-            <div class="hero-label">GLAZURNIK • ŁAZIENKI • PODŁOGI</div>
-            <p class="hero-description">Precyzyjne układanie płytek i kompleksowe wykończenia wnętrz.</p>
-            <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="scrollToElement('realizacje')">ZOBACZ REALIZACJE</button>
-                <button class="btn btn-secondary" onclick="scrollToElement('kontakt')">NAPISZ</button>
-            </div>
+    <div class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Zamknij podgląd">×</button>
+      <div class="lightbox-content">
+        <img src="" alt="Pełny widok realizacji" />
+        <div class="lightbox-meta">
+          <span class="lightbox-category">Kategoria</span>
+          <strong class="lightbox-title">Tytuł realizacji</strong>
         </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="uslugi" class="services">
-        <h2>CO ROBIĘ.</h2>
-        <div class="services-list">
-            <div class="service-item">
-                <div class="service-number">01</div>
-                <div class="service-name">ŁAZIENKI</div>
-                <div class="service-arrow">→</div>
-                <div class="service-preview"></div>
-            </div>
-            <div class="service-item">
-                <div class="service-number">02</div>
-                <div class="service-name">UKŁADANIE PŁYTEK</div>
-                <div class="service-arrow">→</div>
-                <div class="service-preview"></div>
-            </div>
-            <div class="service-item">
-                <div class="service-number">03</div>
-                <div class="service-name">GRES WIELKOFORMATOWY</div>
-                <div class="service-arrow">→</div>
-                <div class="service-preview"></div>
-            </div>
-            <div class="service-item">
-                <div class="service-number">04</div>
-                <div class="service-name">PODŁOGI</div>
-                <div class="service-arrow">→</div>
-                <div class="service-preview"></div>
-            </div>
-            <div class="service-item">
-                <div class="service-number">05</div>
-                <div class="service-name">HYDROIZOLACJA</div>
-                <div class="service-arrow">→</div>
-                <div class="service-preview"></div>
-            </div>
-            <div class="service-item">
-                <div class="service-number">06</div>
-                <div class="service-name">MOZAIKA</div>
-                <div class="service-arrow">→</div>
-                <div class="service-preview"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PORTFOLIO -->
-    <section id="realizacje" class="portfolio">
-        <h2>REALIZACJE.</h2>
-        <div class="gallery">
-            <div class="gallery-item">
-                <div class="gallery-image"></div>
-                <div class="gallery-info">
-                    <div class="gallery-number">01 / ŁAZIENKA</div>
-                    <div class="gallery-title">BETON + GRES</div>
-                    <div class="gallery-location">WARSZAWA</div>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-image"></div>
-                <div class="gallery-info">
-                    <div class="gallery-number">02 / WC</div>
-                    <div class="gallery-title">MINIMALIZM</div>
-                    <div class="gallery-location">KRAKÓW</div>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-image"></div>
-                <div class="gallery-info">
-                    <div class="gallery-number">03 / PODŁOGA</div>
-                    <div class="gallery-title">GRES 120×120</div>
-                    <div class="gallery-location">WROCŁAW</div>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-image"></div>
-                <div class="gallery-info">
-                    <div class="gallery-number">04 / ŁAZIENKA</div>
-                    <div class="gallery-title">NOWOCZESNA</div>
-                    <div class="gallery-location">POZNAŃ</div>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-image"></div>
-                <div class="gallery-info">
-                    <div class="gallery-number">05 / KUCHNIA</div>
-                    <div class="gallery-title">PŁYTKI MAŁY FORMAT</div>
-                    <div class="gallery-location">GDAŃSK</div>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <div class="gallery-image"></div>
-                <div class="gallery-info">
-                    <div class="gallery-number">06 / CAŁOROCZNA</div>
-                    <div class="gallery-title">GARAŻ + SIEŃ</div>
-                    <div class="gallery-location">SZCZECIN</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROCESS -->
-    <section id="proces" class="process">
-        <h2>OD PUSTEJ ŚCIANY<br>DO GOTOWEGO WNĘTRZA.</h2>
-        <div class="timeline">
-            <div class="timeline-step">
-                <div class="timeline-number">01</div>
-                <div class="timeline-name">POMIAR</div>
-            </div>
-            <div class="timeline-step">
-                <div class="timeline-number">02</div>
-                <div class="timeline-name">PRZYGOTOWANIE</div>
-            </div>
-            <div class="timeline-step">
-                <div class="timeline-number">03</div>
-                <div class="timeline-name">HYDROIZOLACJA</div>
-            </div>
-            <div class="timeline-step">
-                <div class="timeline-number">04</div>
-                <div class="timeline-name">UKŁADANIE</div>
-            </div>
-            <div class="timeline-step">
-                <div class="timeline-number">05</div>
-                <div class="timeline-name">FUGOWANIE</div>
-            </div>
-            <div class="timeline-step">
-                <div class="timeline-number">06</div>
-                <div class="timeline-name">EFEKT</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- STATEMENT -->
-    <section class="statement">
-        <h2>DETAL<br>ROBI<br>RÓŻNICĘ.</h2>
-        <p class="statement-sub">Proste linie. Równe fugi. Dobre przygotowanie podłoża.</p>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="omnie" class="about">
-        <div class="about-image"></div>
-        <div class="about-content">
-            <h2 class="about-title">JESTEM JAN.</h2>
-            <p class="about-text">Pracuję sam. Nie wysyłam przypadkowej ekipy. Od pierwszego pomiaru do ostatniej fugi jestem odpowiedzialny za realizację.</p>
-            <div class="about-stats">
-                <div class="stat">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">LAT DOŚWIADCZENIA</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">100+</div>
-                    <div class="stat-label">REALIZACJI</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">WARSZAWA</div>
-                    <div class="stat-label">I OKOLICE</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TOOLS -->
-    <section class="tools">
-        <h2>LICZY SIĘ WARSZTAT.</h2>
-        <div class="tools-grid">
-            <div class="tool-item">POZIOMICA</div>
-            <div class="tool-item">PRZECINARKA DO PŁYTEK</div>
-            <div class="tool-item">KIELNIA</div>
-            <div class="tool-item">PACA</div>
-            <div class="tool-item">FUGA</div>
-            <div class="tool-item">GRES WIELKOFORMATOWY</div>
-        </div>
-        <p class="tools-description">Dokładność zaczyna się jeszcze przed położeniem pierwszej płytki.</p>
-    </section>
-
-    <!-- BEFORE/AFTER -->
-    <section class="before-after">
-        <h2>ZOBACZ RÓŻNICĘ.</h2>
-        <div class="ba-label">PRZED / PO</div>
-        <div class="ba-container" id="baSlider">
-            <div class="ba-before">PRZED</div>
-            <div class="ba-after">PO</div>
-            <div class="ba-slider"></div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="testimonials">
-        <div class="testimonials-container">
-            <div class="testimonial">
-                <p class="testimonial-quote">"Dokładnie, terminowo i bez zbędnego zamieszania."</p>
-                <p class="testimonial-author">— Michał K.</p>
-                <p class="testimonial-demo">DEMO OPINIA</p>
-            </div>
-            <div class="testimonial">
-                <p class="testimonial-quote">"Profesjonalnie, szybko, bez małych rzeczy na górze."</p>
-                <p class="testimonial-author">— Katarzyna R.</p>
-                <p class="testimonial-demo">DEMO OPINIA</p>
-            </div>
-            <div class="testimonial">
-                <p class="testimonial-quote">"Godna rekomendacja każdemu kto szuka glazurnika."</p>
-                <p class="testimonial-author">— Tomasz S.</p>
-                <p class="testimonial-demo">DEMO OPINIA</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq">
-        <h2>PYTANIA?</h2>
-        <div class="faq-list">
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Ile kosztuje układanie płytek?</span>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">Koszt zależy od wielkości pomieszczenia, rodzaju płytek i złożoności pracy. Dla dokładnej wyceny potrzebuje informacji o metrażu i standardzie pracy. Zapraszam do kontaktu.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Czy wykonujesz cały remont łazienki?</span>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">Specjalizuję się w pracach glazurniczych i wykończeniach. Mogę koordynować całą inwestycję, ale głównym moim zakresem jest profesjonalne układanie płytek i hydroizolacja.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Czy można wysłać zdjęcia do wstępnej wyceny?</span>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">Tak, możesz wysłać zdjęcia wraz z wymiarami pomieszczenia. Po ich analizie umówię się z Tobą na osobisty pomiar, który jest niezbędny dla dokładnej wyceny.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Czy wykonujesz hydroizolację?</span>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">Tak, hydroizolacja to nieodłączna część moich prac, szczególnie w łazienkach i mokrych pomieszczeniach. Gwarantuję profesjonalną ochronę przed wilgością.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Ile trwa realizacja?</span>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">Łazienka średniej wielkości zajmuje zwykle 7-10 dni roboczych. Dokładny czas zależy od rozmiaru oraz złożoności projektu. Wszystko omówię z Tobą na etapie wyceny.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Czy pracujesz na materiale klienta?</span>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">Tak, mogę pracować na Twoim materiale. W przypadku wątpliwości doradze jakie płytki będą najlepsze do Twojego projektu. Mogę też zaproponować dostawcę.</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section id="kontakt" class="final-cta">
-        <h2>MASZ<br>ŁAZIENKĘ<br>DO ZROBIENIA?</h2>
-        <p class="final-cta-sub">Wyślij zdjęcia i krótki opis. Porozmawiajmy o Twoim projekcie.</p>
-        <div class="final-cta-buttons">
-            <button class="btn btn-primary" onclick="alert('kontakt@brukpro.pl')">NAPISZ</button>
-            <button class="btn btn-secondary" onclick="alert('+48 000 000 000')">ZADZWOŃ</button>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-top">
-            <div class="footer-section">
-                <h3>BRUK PRO</h3>
-                <p style="font-size: 0.85rem; color: var(--concrete);">GLAZURNIK / WYKOŃCZENIA</p>
-            </div>
-            <div class="footer-section">
-                <h3>NAWIGACJA</h3>
-                <div class="footer-links">
-                    <a href="#uslugi">Usługi</a>
-                    <a href="#realizacje">Realizacje</a>
-                    <a href="#proces">Proces</a>
-                    <a href="#kontakt">Kontakt</a>
-                </div>
-            </div>
-            <div class="footer-section footer-contact">
-                <h3>KONTAKT</h3>
-                <a href="tel:+48000000000">+48 000 000 000</a>
-                <a href="mailto:kontakt@brukpro.pl">kontakt@brukpro.pl</a>
-                <p style="font-size: 0.75rem; color: var(--concrete); margin-top: 10px; letter-spacing: 0.05em;">DEMO / FIKCYJNA STRONA</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p style="font-size: 0.8rem;">© 2026 BRUK PRO. Wszystkie prawa zastrzeżone. — DEMO</p>
-        </div>
-    </footer>
+      </div>
+    </div>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
