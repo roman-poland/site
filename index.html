@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRUK PRO — Glazurnik i Wykończenia Wnętrz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-left">
+            <div class="nav-logo">BRUK PRO</div>
+            <div class="nav-descriptor">GLAZURNIK / WYKOŃCZENIA</div>
+        </div>
+        <div class="nav-center">
+            <a href="#uslugi">USŁUGI</a>
+            <a href="#realizacje">REALIZACJE</a>
+            <a href="#proces">PROCES</a>
+            <a href="#omnie">O MNIE</a>
+            <a href="#kontakt">KONTAKT</a>
+        </div>
+        <button class="nav-cta" onclick="scrollToElement('kontakt')">ZAMÓW WYCENĘ</button>
+        <div class="hamburger" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <a href="#uslugi" onclick="toggleMobileMenu()">USŁUGI</a>
+        <a href="#realizacje" onclick="toggleMobileMenu()">REALIZACJE</a>
+        <a href="#proces" onclick="toggleMobileMenu()">PROCES</a>
+        <a href="#omnie" onclick="toggleMobileMenu()">O MNIE</a>
+        <a href="#kontakt" onclick="toggleMobileMenu()">KONTAKT</a>
+        <a href="#kontakt" onclick="toggleMobileMenu()" style="background: var(--accent); color: var(--black); font-weight: 900;">ZAMÓW WYCENĘ</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-image"></div>
+        <div class="hero-number">01</div>
+        <div class="hero-content">
+            <h1>ROBOTA,<br>KTÓRĄ<br>WIDAĆ.</h1>
+            <div class="hero-label">GLAZURNIK • ŁAZIENKI • PODŁOGI</div>
+            <p class="hero-description">Precyzyjne układanie płytek i kompleksowe wykończenia wnętrz.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToElement('realizacje')">ZOBACZ REALIZACJE</button>
+                <button class="btn btn-secondary" onclick="scrollToElement('kontakt')">NAPISZ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="uslugi" class="services">
+        <h2>CO ROBIĘ.</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <div class="service-number">01</div>
+                <div class="service-name">ŁAZIENKI</div>
+                <div class="service-arrow">→</div>
+                <div class="service-preview"></div>
+            </div>
+            <div class="service-item">
+                <div class="service-number">02</div>
+                <div class="service-name">UKŁADANIE PŁYTEK</div>
+                <div class="service-arrow">→</div>
+                <div class="service-preview"></div>
+            </div>
+            <div class="service-item">
+                <div class="service-number">03</div>
+                <div class="service-name">GRES WIELKOFORMATOWY</div>
+                <div class="service-arrow">→</div>
+                <div class="service-preview"></div>
+            </div>
+            <div class="service-item">
+                <div class="service-number">04</div>
+                <div class="service-name">PODŁOGI</div>
+                <div class="service-arrow">→</div>
+                <div class="service-preview"></div>
+            </div>
+            <div class="service-item">
+                <div class="service-number">05</div>
+                <div class="service-name">HYDROIZOLACJA</div>
+                <div class="service-arrow">→</div>
+                <div class="service-preview"></div>
+            </div>
+            <div class="service-item">
+                <div class="service-number">06</div>
+                <div class="service-name">MOZAIKA</div>
+                <div class="service-arrow">→</div>
+                <div class="service-preview"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="realizacje" class="portfolio">
+        <h2>REALIZACJE.</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="gallery-image"></div>
+                <div class="gallery-info">
+                    <div class="gallery-number">01 / ŁAZIENKA</div>
+                    <div class="gallery-title">BETON + GRES</div>
+                    <div class="gallery-location">WARSZAWA</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image"></div>
+                <div class="gallery-info">
+                    <div class="gallery-number">02 / WC</div>
+                    <div class="gallery-title">MINIMALIZM</div>
+                    <div class="gallery-location">KRAKÓW</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image"></div>
+                <div class="gallery-info">
+                    <div class="gallery-number">03 / PODŁOGA</div>
+                    <div class="gallery-title">GRES 120×120</div>
+                    <div class="gallery-location">WROCŁAW</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image"></div>
+                <div class="gallery-info">
+                    <div class="gallery-number">04 / ŁAZIENKA</div>
+                    <div class="gallery-title">NOWOCZESNA</div>
+                    <div class="gallery-location">POZNAŃ</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image"></div>
+                <div class="gallery-info">
+                    <div class="gallery-number">05 / KUCHNIA</div>
+                    <div class="gallery-title">PŁYTKI MAŁY FORMAT</div>
+                    <div class="gallery-location">GDAŃSK</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image"></div>
+                <div class="gallery-info">
+                    <div class="gallery-number">06 / CAŁOROCZNA</div>
+                    <div class="gallery-title">GARAŻ + SIEŃ</div>
+                    <div class="gallery-location">SZCZECIN</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="proces" class="process">
+        <h2>OD PUSTEJ ŚCIANY<br>DO GOTOWEGO WNĘTRZA.</h2>
+        <div class="timeline">
+            <div class="timeline-step">
+                <div class="timeline-number">01</div>
+                <div class="timeline-name">POMIAR</div>
+            </div>
+            <div class="timeline-step">
+                <div class="timeline-number">02</div>
+                <div class="timeline-name">PRZYGOTOWANIE</div>
+            </div>
+            <div class="timeline-step">
+                <div class="timeline-number">03</div>
+                <div class="timeline-name">HYDROIZOLACJA</div>
+            </div>
+            <div class="timeline-step">
+                <div class="timeline-number">04</div>
+                <div class="timeline-name">UKŁADANIE</div>
+            </div>
+            <div class="timeline-step">
+                <div class="timeline-number">05</div>
+                <div class="timeline-name">FUGOWANIE</div>
+            </div>
+            <div class="timeline-step">
+                <div class="timeline-number">06</div>
+                <div class="timeline-name">EFEKT</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="statement">
+        <h2>DETAL<br>ROBI<br>RÓŻNICĘ.</h2>
+        <p class="statement-sub">Proste linie. Równe fugi. Dobre przygotowanie podłoża.</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="omnie" class="about">
+        <div class="about-image"></div>
+        <div class="about-content">
+            <h2 class="about-title">JESTEM JAN.</h2>
+            <p class="about-text">Pracuję sam. Nie wysyłam przypadkowej ekipy. Od pierwszego pomiaru do ostatniej fugi jestem odpowiedzialny za realizację.</p>
+            <div class="about-stats">
+                <div class="stat">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">LAT DOŚWIADCZENIA</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">REALIZACJI</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">WARSZAWA</div>
+                    <div class="stat-label">I OKOLICE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="tools">
+        <h2>LICZY SIĘ WARSZTAT.</h2>
+        <div class="tools-grid">
+            <div class="tool-item">POZIOMICA</div>
+            <div class="tool-item">PRZECINARKA DO PŁYTEK</div>
+            <div class="tool-item">KIELNIA</div>
+            <div class="tool-item">PACA</div>
+            <div class="tool-item">FUGA</div>
+            <div class="tool-item">GRES WIELKOFORMATOWY</div>
+        </div>
+        <p class="tools-description">Dokładność zaczyna się jeszcze przed położeniem pierwszej płytki.</p>
+    </section>
+
+    <!-- BEFORE/AFTER -->
+    <section class="before-after">
+        <h2>ZOBACZ RÓŻNICĘ.</h2>
+        <div class="ba-label">PRZED / PO</div>
+        <div class="ba-container" id="baSlider">
+            <div class="ba-before">PRZED</div>
+            <div class="ba-after">PO</div>
+            <div class="ba-slider"></div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p class="testimonial-quote">"Dokładnie, terminowo i bez zbędnego zamieszania."</p>
+                <p class="testimonial-author">— Michał K.</p>
+                <p class="testimonial-demo">DEMO OPINIA</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-quote">"Profesjonalnie, szybko, bez małych rzeczy na górze."</p>
+                <p class="testimonial-author">— Katarzyna R.</p>
+                <p class="testimonial-demo">DEMO OPINIA</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-quote">"Godna rekomendacja każdemu kto szuka glazurnika."</p>
+                <p class="testimonial-author">— Tomasz S.</p>
+                <p class="testimonial-demo">DEMO OPINIA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <h2>PYTANIA?</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Ile kosztuje układanie płytek?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">Koszt zależy od wielkości pomieszczenia, rodzaju płytek i złożoności pracy. Dla dokładnej wyceny potrzebuje informacji o metrażu i standardzie pracy. Zapraszam do kontaktu.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Czy wykonujesz cały remont łazienki?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">Specjalizuję się w pracach glazurniczych i wykończeniach. Mogę koordynować całą inwestycję, ale głównym moim zakresem jest profesjonalne układanie płytek i hydroizolacja.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Czy można wysłać zdjęcia do wstępnej wyceny?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">Tak, możesz wysłać zdjęcia wraz z wymiarami pomieszczenia. Po ich analizie umówię się z Tobą na osobisty pomiar, który jest niezbędny dla dokładnej wyceny.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Czy wykonujesz hydroizolację?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">Tak, hydroizolacja to nieodłączna część moich prac, szczególnie w łazienkach i mokrych pomieszczeniach. Gwarantuję profesjonalną ochronę przed wilgością.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Ile trwa realizacja?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">Łazienka średniej wielkości zajmuje zwykle 7-10 dni roboczych. Dokładny czas zależy od rozmiaru oraz złożoności projektu. Wszystko omówię z Tobą na etapie wyceny.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Czy pracujesz na materiale klienta?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">Tak, mogę pracować na Twoim materiale. W przypadku wątpliwości doradze jakie płytki będą najlepsze do Twojego projektu. Mogę też zaproponować dostawcę.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section id="kontakt" class="final-cta">
+        <h2>MASZ<br>ŁAZIENKĘ<br>DO ZROBIENIA?</h2>
+        <p class="final-cta-sub">Wyślij zdjęcia i krótki opis. Porozmawiajmy o Twoim projekcie.</p>
+        <div class="final-cta-buttons">
+            <button class="btn btn-primary" onclick="alert('kontakt@brukpro.pl')">NAPISZ</button>
+            <button class="btn btn-secondary" onclick="alert('+48 000 000 000')">ZADZWOŃ</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-section">
+                <h3>BRUK PRO</h3>
+                <p style="font-size: 0.85rem; color: var(--concrete);">GLAZURNIK / WYKOŃCZENIA</p>
+            </div>
+            <div class="footer-section">
+                <h3>NAWIGACJA</h3>
+                <div class="footer-links">
+                    <a href="#uslugi">Usługi</a>
+                    <a href="#realizacje">Realizacje</a>
+                    <a href="#proces">Proces</a>
+                    <a href="#kontakt">Kontakt</a>
+                </div>
+            </div>
+            <div class="footer-section footer-contact">
+                <h3>KONTAKT</h3>
+                <a href="tel:+48000000000">+48 000 000 000</a>
+                <a href="mailto:kontakt@brukpro.pl">kontakt@brukpro.pl</a>
+                <p style="font-size: 0.75rem; color: var(--concrete); margin-top: 10px; letter-spacing: 0.05em;">DEMO / FIKCYJNA STRONA</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="font-size: 0.8rem;">© 2026 BRUK PRO. Wszystkie prawa zastrzeżone. — DEMO</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
