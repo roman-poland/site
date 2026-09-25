@@ -155,14 +155,50 @@ document.addEventListener('keydown', (event) => {
 });
 
 const contactForm = document.querySelector('.contact-form');
+const formStatus = document.querySelector('.form-status');
+
 if (contactForm) {
   contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const name = (formData.get('name') || '').toString().trim();
+    const email = (formData.get('email') || '').toString().trim();
+    const message = (formData.get('message') || '').toString().trim();
     const button = contactForm.querySelector('button[type="submit"]');
+
+    if (!name || !email || !message) {
+      if (formStatus) {
+        formStatus.textContent = 'Uzupełnij wszystkie pola.';
+        formStatus.classList.add('error');
+      }
+      return;
+    }
+
+    const subject = encodeURIComponent(`Zapytanie od ${name}`);
+    const body = encodeURIComponent(
+      `Imię: ${name}\nEmail: ${email}\n\nTreść zapytania:\n${message}`
+    );
+
     if (button) {
-      button.textContent = 'WYSŁANO DEMO';
+      button.textContent = 'WYSYŁANIE...';
       button.disabled = true;
-      button.style.opacity = '0.8';
+    }
+
+    window.location.href = `mailto:kontakt@glazurastudio.pl?subject=${subject}&body=${body}`;
+
+    contactForm.reset();
+
+    if (formStatus) {
+      formStatus.textContent = 'Wiadomość przygotowana. Sprawdź klienta poczty.';
+      formStatus.classList.remove('error');
+    }
+
+    if (button) {
+      setTimeout(() => {
+        button.textContent = 'WYŚLIJ ZAPYTANIE';
+        button.disabled = false;
+      }, 2200);
     }
   });
 }
